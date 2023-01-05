@@ -2,7 +2,8 @@
 
 ## Implement a minimal web page
 
-Create a web service and enter the address *http://localhost:8080/FromZerotoExpert* into the browser and the page will show *Hi, Welcome to FromZerotoExpert.*
+Create a web service and enter the address *http://localhost:8080/FromZerotoExpert* into the browser. 
+Then, a new html page will show *Hi, Welcome to FromZerotoExpert.*
 
 Steps:
 - Create a web project and import Servlet dependencies in *pom.xml* file.
