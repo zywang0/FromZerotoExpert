@@ -17,13 +17,14 @@ public class Servlet extends HttpServlet {
             String value = cookie.getValue();
             if(name.equals("oldUser") && value.equals("visited")){
                 writer.println("Hi, Welcome to FromZerotoExpert Again!");
+                break;
+            }else {
+                Cookie visited = new Cookie("oldUser", "visited");
+                visited.setMaxAge(60*60*24);
+                response.addCookie(visited);
+                writer.println("Hi, Welcome to FromZerotoExpert.");
             }
         }
-        writer.println("Hi, Welcome to FromZerotoExpert.");
-
-        Cookie visited = new Cookie("oldUser", "visited");
-        visited.setMaxAge(60*60*24);
-        response.addCookie(visited);
     }
 
     @Override
